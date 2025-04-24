@@ -1,0 +1,585 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Muli&family=Roboto:wght@400;700&display=swap');
+
+*{
+    margin: auto;
+    padding: 0;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+
+#container{
+    width: 100%;
+    background-color: lightgreen; /* Set the background color to light green */
+    background-size: 4px 4px; /* Adjust the size of the pattern */
+    background-image: linear-gradient(90deg, rgba(255, 255, 255, 0.2) 50%, 
+    transparent 50%), linear-gradient(0deg, rgba(255, 255, 255, 0.2) 50%, transparent 50%);
+    /* background: url(/images/green-abstract-texture-background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; */
+}
+
+.content{
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 70%;
+}
+
+.header{
+    background-image: url(/images/iqrabackground.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    border: 5px solid green;
+    border-radius: 20px;
+    padding: 5px;
+    position: relative;
+    width: 100%;
+    display: flex;
+    height: 150px;
+    top: 0;
+    z-index: 2;
+}
+
+.logo > img{
+    width: 100px;
+    height: 100px;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.header > .header-box{
+    margin-left: 0;
+    padding-left: 0;
+    text-align: center;
+}
+
+.header > .header-box > h3{
+    font-size: 40px;
+    text-decoration: double;
+    color: green;
+    outline-color: aliceblue;
+}
+
+.header > .header-box > h4{
+    color: red;
+    font-size: 20px;
+}
+
+.header > .header-box > p{
+    font-style: italic;
+    text-indent: 1.5px;
+}
+
+.welcome{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 50px;
+    text-align: center;
+    color: red;
+    text-shadow: 4px 4px 4px #333;
+    font-style: oblique;
+    font-weight: bold;
+}
+.slideshow-container {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+  
+.slide {
+    display: none;
+}
+  
+img {
+    width: 100%;
+    height: auto;
+}
+  
+.prev, .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+  
+.prev {
+    left: 0;
+}
+  
+.next {
+    right: 0;
+}
+
+.intro > h5 {
+    text-align: center;
+    font-size: 22px;
+}
+
+.intro > p {
+    text-align: justify;
+    font-weight: lighter;
+    font-size: 22px;
+    letter-spacing: 1.5px;
+    font-family: "Agbalumo", sans-serif;
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 30px;
+}
+
+.banner > img{
+    width: 70%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 30px;
+    margin: 10px;
+    margin-left: 80px;
+}
+ 
+.tabs {
+    display: flex;
+    gap: 0;
+    align-items: center;
+    justify-content: center;
+    margin: 15px;
+    width: 600px;
+    /* margin-left: 15px; */
+
+}
+
+.tabs > .sidebar-menu {
+    height: auto;
+    padding: 5px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+.tabs > .sidebar-menu > a {
+    text-decoration: none;
+    text-align: center;
+    border-radius: 10px;
+    width: 50px;
+    font-size: 18px;
+    padding: 7px;
+    color: whitesmoke;
+    background-color: black;
+    transition:  2s;
+}
+
+.tabs > .sidebar-menu > a:hover{
+    background-color: grey;
+    color:red;
+    padding: 5px 15px;
+}
+
+.tabs > .sidebar-menu > a:active {
+    background-color: yellow;
+}
+
+.tabs > .sidebar-menu > a:visited {
+    color: red;
+}
+
+.detail{
+    text-indent: 9px;
+    font-size: 17px;
+    text-align: justify;
+    color: navy;
+    font-family: "Pacifico" sans-serif;
+}
+
+.detail > .detail-founder{
+    margin-top: 10px;
+}
+
+.detail > .detail-propietor > p > span{
+    font-weight: bold;
+    font-family: "Pacifico";
+}
+
+.detail > .detail-propietor > p{
+    font-family: "Agbalumo", sans-serif;
+    text-indent: 5px;
+    letter-spacing: 2px;
+}
+
+.detail > .detail-founder > p{
+    font-family: "Agbalumo", sans-serif;
+    text-indent: 5px;
+    letter-spacing: 2px;
+}
+
+.detail >  p > span, em{
+    font-weight: bold;
+}
+
+.detail > img {
+    width: 250px;
+    height: 250px;
+    float: left;
+    margin-right: 10px;
+    margin-top: 10px;
+    padding: 5px;
+    border: green solid 2px;
+    box-shadow: #000 5px;
+    border-radius: 50px;
+}
+
+.detail-propietor{
+    margin-top: 10px;
+}
+
+.board > h1 > h2{
+    text-align: center;
+    align-items: center;
+}
+
+.admission {
+    text-align: center;
+    font-family: "Agbalumo", sans-serif;;
+}
+
+.media-video > video{
+    width: 50%;
+    height: 150px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: darkgrey;
+    border: solid black 5px;
+    border-radius: 20px;
+}
+
+.box {
+    border: none;
+    transition: none;
+    text-align: justify;
+}
+
+.media-video > p{
+    text-align: justify;
+    letter-spacing: 1.5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1.5rem;
+}
+.media-video > video {
+    width: 100%; 
+    height: 80%;
+    object-fit: cover;
+    border: palevioletred 6px solid;
+}
+
+.facilities > h2{
+    color: red;
+    font-style: italic;
+}
+
+.facilities > ul > li{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    margin: 4px;
+    list-style-type: decimal;   
+}
+
+.facilities > ul > li > span{
+    font-weight: 800;
+}
+
+.address > h3{
+    color: red;
+    font-weight: 800;
+}
+
+.address > address{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.address > p{
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    text-indent: 2px;
+}
+
+.contact-us > h3{
+    color: red;
+    font-weight: 800;
+}
+.contact-us > ul > li{
+    color: red;
+    font-size: 20px;
+}
+
+.social-media > a{
+    text-decoration: none;
+    color: #d5d5d5;
+    font-size: 1.2rem;
+    width: 2.3;
+}
+
+.social-media > a:hover{
+   color: #8c94b8;
+}
+
+article:hover{
+    box-shadow: 5px 5px  20px black;
+    transition: all 2s;
+}
+
+article:active{
+    opacity: 0.4;
+}
+
+section {
+    width: 800px;
+    margin: auto;
+    margin-top: 20px;   
+    display: inline-block;
+}
+
+article{
+    width: 340px;
+    display: inline-block;
+    border: solid 3px lavenderblush;
+    border-radius: 20px;
+    margin: 5px;
+    padding: 2px;
+    transition-delay: 2s;
+}
+
+article > img, video{
+    height: 280px;
+    width: 330px;
+    border-radius: 20px;
+}
+
+article > h3 {
+    color: black;
+    padding: 3px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 
+    'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-family: "playfair display" ;
+}
+
+article > p{
+    padding: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+label {
+    font-size: 25px;
+    color: red;
+}
+
+input{
+    width: 450px;
+    height: 40px;
+}
+
+.submit{
+    color: #141c2c;
+    font-size: 20px;
+    width: 100px;
+    border: 2px solid #141c2c;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 2s ease-in;
+}
+
+.gender{
+    width: 20px;
+    height: 10px;
+}
+
+footer{
+    background-color: #141c2c;
+    padding: 2rem 3.5rem;
+}
+
+.footer-container{
+    display:flex ;
+    text-wrap: wrap;
+}
+
+.footer-wrapper{
+    display: flex;
+    width: 100%;
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 0.8rem;
+}
+
+.footer-wrapper > h4{
+    color: #d5d5d5;
+    line-height: 4; 
+}
+
+.footer-wrapper > a{
+    text-decoration: none;
+    color: #8c94b8;
+    line-height: 2;
+}
+
+.footer-wrapper > a > img {
+    width: 25px;
+    height: 25px;
+}
+
+.footer-wrapper > a:hover{
+    color: #d5d5d5;
+}
+
+.footer-wrapper > p{
+    color: #8c94b8;
+    margin-bottom: 20px;
+}
+
+.footer-newsletter{
+    display: flex;
+    min-width: 300px;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
+
+.footer-newsletter > input{
+    background-color: #d5d5d5;
+    border: 2px solid #d5d5d5;
+    width: 65%;
+    padding: 0.5rem;
+    margin-right: 0.3rem;
+}
+
+.footer-newsletter > button{
+    color: #d5d5d5;
+    width: 20%;
+    background-color: transparent;
+    border: 2px solid #8c94b8;
+    padding: 0.5rem;
+    cursor: pointer;
+    transition: all 2s ease-in;
+}
+
+.footer-newsletter > button:hover{
+    background-color: #8c94b8;
+}
+
+.divider{
+    border: 1px solid #8c94b8;
+    margin: 0.5rem 0rem;
+}
+
+.webright{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.webright-left{
+    color: #d5d5d5;
+    font-size: 0.8rem;
+}
+
+.webright-right > a{
+    text-decoration: none;
+    color: #d5d5d5;
+    font-size: 0.8rem;
+    padding-right: 10px;
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0;
+        margin: 0;
+    }
+
+    #container {
+        margin: 0;
+    }
+
+    .content{
+        margin: 0;
+        width: 100%;
+        padding: 10px;
+    }
+
+    .header {
+        width: 100%;
+        height: 120px;
+    }
+    
+    .header > .header-box > h3 {
+        font-size: 18px;
+    }
+
+    .header > .header-box > h4 {
+        font-size: 10px;
+    }
+
+    .header > .header-box > p {
+        font-size: 7px;
+    }
+
+    .tabs {
+        gap: 0;
+        justify-content: center;
+        margin: 0px;
+        margin-left: 0px;
+        margin-bottom: 3px;
+        width: 100%;
+    }
+    
+    .tabs > .sidebar-menu {
+        height: 18px;
+        padding: 0;
+    }
+    
+    .tabs > .sidebar-menu > a {
+        border-radius: 5px;
+        width: 50px;
+        font-size: 9px;
+        padding: 3px;
+    }
+
+    .welcome {
+        font-size: 25px;
+    }
+
+    .intro > h5 {
+        font-size: 15px;
+    }
+
+    .intro > p {
+        letter-spacing: 0;
+        font-size: 15px;
+    }
+
+    article {
+        display: block;
+        width: 330px;
+        justify-content: center;
+    }
+
+    article > img, video {
+        width: 320px;
+    }
+
+    .media-video > p{
+        letter-spacing: 0;
+    }
+
+    .admission {
+        font-size: 20px;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0;
+    }
+}
