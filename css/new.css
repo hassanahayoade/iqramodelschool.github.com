@@ -605,10 +605,7 @@ section {
     color: #555;
 }
 
-form input[type="name"],
-form input[type="state"],
-form input[type="email"],
-form input[type="number"] {
+#contact-form input[type="name"]{
     width: 100%;
     padding: 10px;
     margin-bottom: 15px;
@@ -621,7 +618,7 @@ form input[type="number"] {
     margin-right: 10px;
 }
 
-button {
+#contact-form button {
     background-color: #228B22;
     color: white;
     padding: 10px 20px;
@@ -630,7 +627,7 @@ button {
     cursor: pointer;
 }
 
-button .submit:hover {
+#contact-form button:hover {
     background-color: transparent rgb(2, 20, 2)
 }
 
